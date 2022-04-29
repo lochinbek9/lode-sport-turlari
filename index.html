@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>BOLALAR SPORT</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#responsive_btn").click(function(){
+        $("#nav_list").slideToggle("down");
+      });
+    });
+  </script>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero-container container">
+        <header class="site-header site-header--open">
+          <div class="site-header__container container">
+            <a href="index.html">
+              <img src="./images/logo.png" alt="logo" width="224" height="56" class="site-header__logo">
+            </a>  
+            <nav class="site-header__navbar">
+              <ul id="nav_list" class="site-header__list">
+                <li class="site-header__item">
+                  <a href="#" class="site-header__link"> 
+                    <img src="./images/home-icon.png" alt="" width="20" height="20 ">
+                  </a> 
+                </li>
+                <li class="site-header__item">
+                  <a href="#" class="site-header__link"> O‘yinlar</a>
+                </li>
+                <li class="site-header__item">
+                  <a href="#" class="site-header__link">Infografika</a>
+                </li>
+                <li class="site-header__item">
+                  <a href="#" class="site-header__link"> Ota-onalar uchun</a>
+                </li>
+                <li class="site-header__item">
+                  <a href="#" class="site-header__link"> To‘garaklar</a>
+                </li>
+                <li class="site-header__item">
+                  <a href="#" class="site-header__link"> Videoblog</a>
+                </li>
+                <li class="site-header__item">
+                  <a href="#" class="site-header__link"> Reyting</a>
+                </li>
+              </ul>
+              <div class="site-header__box">
+                <form action="/action_page.php" class="site-header__form">
+                  <label for="language">
+                    <img src="./images/language-icon.png" alt="language">
+                  </label>
+                  <select id="language" name="language">
+                    <option value="o`zbek">O`zbek</option>
+                    <option value="rus">Rus</option>
+                    <option value="english">English</option>
+                  </select>
+                </form>
+                <a href="#" >
+                  <img src="./images/comnata-site.png" alt="comnata-site">
+                </a>
+              </div>
+            </nav>
+            <div id="responsive_btn" class="site-header__toggle-menu">
+              <i class="fa fa-bars"></i>
+            </div>
+          </div>
+        </header>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

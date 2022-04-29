@@ -1,0 +1,11 @@
+.hero {
+  &__bottom {
+    padding-top: 70px;
+    padding-bottom: 228px;
+  }
+
+
+  background-image: url("../images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
